@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    background: white url("./Assets/pexels-markus-spiske-92083.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.wrapper {
+    height: 60%;
+    width: 60%;
+    margin: 5% 50px;
+}
+
+.keys {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px black;
+    width: 95%;
+    margin: 15px;
+    padding: 25px 5px;
+    border-radius: 10px;
+}
+
+.key {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 25px;
+    width: 25px;
+    transition: 0.9s;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0 0 1px black;
+}
+
+kbd {
+    font-size: 20px;
+}
+
+.playing {
+    transform: scale(1.4);
+    border-color: red;
+    box-shadow: 0 0 15px red;
+}
+
+/*.key:hover {*/
+/*    background-color: rgba(0, 0, 0, 0.2);*/
+/*    margin: 11px;*/
+/*    border: 3px solid aliceblue;*/
+/*    border-radius: 50px;*/
+/*    transition: 0.2s;*/
+/*    box-shadow: 0 0 10px black;*/
+/*}*/
+
+h1 {
+    margin: 30px;
+}
+
+.heading2 {
+    height: 30px;
+    margin-top: 10%;
+    margin-right: 10px;
+    width: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading1 {
+    height: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+/*====================================*/
+.songName {
+    white-space: nowrap;
+    position: static;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
